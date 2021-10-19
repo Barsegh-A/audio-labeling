@@ -8,7 +8,6 @@ files = os.listdir(path)
 df = pd.DataFrame([], columns = ['file_name', 'label'])
 
 for file, i in zip(files, range(len(files))):
-#    os.system("afplay " + path + file)
 	print("Currently playing " + file)
 	playsound(path + file)
 	label = input("Please, provide the label(n for noisy and c for clean audio files): ")
